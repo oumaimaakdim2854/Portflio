@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Oumaima Akdim</title>
+    <meta name="keywords" content="oumaima akdim,oumaima,akdim,html,css,javascript">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   
+    <section class="part_one">
+        <div class="logo">
+            <p><img src="icons/fox_web_fire_website_webpage_browser_icon_233852.png" ></p>
+        </div>
+        <nav class="navbar_links">
+            <a href="#Home">Home</a>
+            <a href="#aboutme-two">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </section>
+    <section id="Home" class="about_me">
+
+        <div class="home-text">
+            <p>Hello my name is</p>
+            <h1>Oumaima <span>Akdim</span></h1>
+            <br>
+            <p>Im <span> web developer </span>
+                this is my official Portfolio web site.</p>
+        </div>
+        <img class="personal-img" src="./img/Code typing-cuate.png" alt="my personal photo" />
+
+
+    </section>
+    <section id="aboutme-two" class="aboutme-two">
+        <img src="./img/Website designer-bro.png" />
+
+        <div>
+            <div class=" title">About<span> ME</span></div>
+
+            <p> My name is Oumaima <span>Akdim</span> am a student in the first year studying development looking
+                forward to be a full stack developer</p>
+        </div>
+
+    </section>
+    <section id="Skills" class="skills">
+        <div class="title">My Top <span> Skills</span></div>
+        <div class="skills-card">
+            <div class="card"> <img
+                    src="./img/scalable-vector-graphics-javascript-encapsulated-postscript-clip-art-javascript-logo-40de2d7012bedac9f010b67c86ba8ffb.png"
+                    alt="javascript" onclick="myFunction(this);" /></div>
+            <div class="card"><img
+                    src="./img/responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-45b8b1260f89f8780f152f9c1e84e1f9.png "
+                    alt="html" onclick="myFunction(this);" /></div>
+            <div class="card"><img src="./img/lfkdkun7bv0tgu9ljlsdf6kn1j-7702a52ebd13cdd5e4a5548a61fa06cf.png "
+                    alt="git" onclick="myFunction(this);" /></div>
+            <div class="card"><img onclick="myFunction(this);" src="./img/bt80vvh0idto51tdc30eoi9fj2.png " alt="css" /></div>
+        
+        </div>
+        <br>
+        <div class="card">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+        <!--<div style="text-align:center">
+            <h2>Tabbed Image Gallery</h2>
+            <p>Click on the images below:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="./img/scalable-vector-graphics-javascript-encapsulated-postscript-clip-art-javascript-logo-4
+                0de2d7012bedac9f010b67c86ba8ffb.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="./img/responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-45b8b1260f89f8780f152f9c1e84e1f9.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            <div class="column">
+                <img src="./img/lfkdkun7bv0tgu9ljlsdf6kn1j-7702a52ebd13cdd5e4a5548a61fa06cf.png "alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>-->
+    </section>
+    <section id="contact" class="CONTACT">
+        <div class="title">CONTACT <span>ME</span></div>
+        <div class="contacts">
+            <a href=""><img
+                    src="./img/facebook-messenger-logo-icon-facebook-picture-e2638162787d2cd8dbcdb5424d3913a5.png"
+                    alt="facebook"></a>
+            <a href=""><img
+                    src="./img/gmail-google-logo-email-computer-icons-gmail-c5b55d04be081fff14f483d6f6b118f2.png"
+                    alt="gmail"></a>
+            <a href="https://www.instagram.com/akdimoumaima28/"><img
+                    src="./img/social-media-marketing-logo-blog-advertising-instagram-8262f73e5bad1b3a03186b491e9ad87c.png"
+                    alt="instagram"></a>
+            <a href=""><img src="./img/8v60lvjleujlv6h2k21i3uiqo5-7c66295ca706809b53207ae6dd8f28de.png"
+                    alt="twitter"></a>
+            <a href=""><img src="./img/5bbf4bcd44bbe-35dbec106cc36e5ac36df475379c8c85.png" alt="linkedin"></a>
+        </div>
+    </section>
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
